@@ -2,7 +2,7 @@
 using namespace std;
 #define ll long long
 #define endl '\n'
-void binary_search(vector<ll>v,ll target){
+void upper_bound(vector<ll>v,ll target){
   ll left=0,right=v.size()-1,mid,flag=0;
    while(left<=right){
     mid=(left+right)/2;
@@ -36,6 +36,6 @@ int main(){
   sort(v.begin(),v.end());
   cout<<"Target element: ";
   cin>>target;
-  binary_search(v,target);
+  upper_bound(v,target);
 return 0;
 }
