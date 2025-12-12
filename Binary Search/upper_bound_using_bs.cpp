@@ -2,7 +2,7 @@
 using namespace std;
 #define ll long long
 #define endl '\n'
-void binary_search(vector<ll>v,int target){
+void binary_search(vector<ll>v,ll target){
   ll left=0,right=v.size()-1,mid,flag=0;
    while(left<=right){
     mid=(left+right)/2;
