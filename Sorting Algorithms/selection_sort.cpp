@@ -2,7 +2,7 @@
 using namespace std;
 #define ll long long
 #define endl "\n"
-void selection_sort(vector<ll>&v,int n){
+void selection_sort(vector<ll>&v,ll n){
  for(ll i=0;i<n-1;i++){
     int min_index=i;
     for(ll j=i+1;j<n;j++){
@@ -11,6 +11,9 @@ void selection_sort(vector<ll>&v,int n){
         }
     }
     swap(v[i],v[min_index]);
+ }
+ for(ll i=0;i<n;i++){
+    cout<<v[i]<<" ";
  }
 }
 int main(){
@@ -22,8 +25,5 @@ for(ll i=0;i<n;i++){
     cin>>v[i];
 }
 selection_sort(v,n);
-for(ll i=0;i<n;i++){
-    cout<<v[i]<<" ";
-}
 return 0;
 }
