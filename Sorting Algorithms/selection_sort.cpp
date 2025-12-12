@@ -12,9 +12,6 @@ void selection_sort(vector<ll>&v,ll n){
     }
     swap(v[i],v[min_index]);
  }
- for(ll i=0;i<n;i++){
-    cout<<v[i]<<" ";
- }
 }
 int main(){
 ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
@@ -25,5 +22,9 @@ for(ll i=0;i<n;i++){
     cin>>v[i];
 }
 selection_sort(v,n);
+for(ll i=0;i<n;i++){
+    cout<<v[i]<<" ";
+}
+cout<<endl;
 return 0;
 }
