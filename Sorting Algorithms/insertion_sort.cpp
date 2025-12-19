@@ -2,7 +2,7 @@
 using namespace std;
 #define ll long long
 #define endl "\n"
-#define fastio() ios::sync_with_stdio(false); cin.tie(nullptr);
+#define fastio() ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
 void insertion_sort(vector<ll>&v){
   for(ll i=1;i<v.size();i++){
     ll key=v[i];

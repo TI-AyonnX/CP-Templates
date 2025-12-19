@@ -23,7 +23,7 @@ void upper_bound(vector<ll>v,ll target){
     cout<<"not found"<<endl;
     cout<<"upper bound is: "<<left<<endl;
    }
-  }
+}
 int main(){
   ll n,target;
   cout<<"Enter the size of the vector: ";
