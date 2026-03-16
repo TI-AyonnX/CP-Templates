@@ -16,7 +16,7 @@ void DFS(ll node){
 }
 int main(){
    fastio();
-   ll n,m,u,v;
+   ll n,m,u,v,starting_node;
       cin>>n>>m;
       adj.resize(n+1);
       visited.resize(n+1,false);
@@ -25,11 +25,8 @@ int main(){
         adj[u].push_back(v);
         adj[v].push_back(u);
       }
-     for(ll i=1;i<=n;i++){
-      if(!visited[i]){
-        DFS(i);
-      }
-     }
+     cin>>starting_node;
+     DFS(starting_node);
      cout<<endl;
   return 0;
 }
