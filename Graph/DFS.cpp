@@ -14,6 +14,25 @@ void DFS(ll node){
     }
   }
 }
+/*
+void DFS(ll starting_node){
+  stack<ll>st;
+  st.push(starting_node);
+  visited[starting_node]=true;
+  while(!st.empty()){
+    ll node=st.top();
+    st.pop();
+    cout<<node<<" ";
+    for(auto x:adj[node]){
+      if(!visited[x]){
+        visited[x]=true;
+        st.push(x);
+      }
+    }
+  }
+  cout<<endl;
+}
+*/
 int main(){
    fastio();
    ll n,m,u,v,starting_node;

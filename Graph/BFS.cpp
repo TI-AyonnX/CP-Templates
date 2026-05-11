@@ -13,14 +13,13 @@ void BFS(ll starting_node){
         ll node=q.front();
         q.pop();
         cout<<node<<" ";
-        /*
         for(auto x:adj[node]){
             if(!visited[x]){
-                visited[x]=true;                         for-each loop
+                visited[x]=true;                         // for-each loop
                 q.push(x);
             }
         }
-        */
+        /*
        for(ll i=0;i<adj[node].size();i++){
         ll x=adj[node][i];
         if(!visited[x]){                                // normal loop                     
@@ -28,6 +27,7 @@ void BFS(ll starting_node){
             q.push(x);
         }
        }
+       */
     }
     cout<<endl;
 }
@@ -43,6 +43,9 @@ int main(){
         adj[v].push_back(u);
     }
     cin>>starting_node;
+    for(ll i=1;i<n;i++){
+        BFS(i);
+    }
     BFS(starting_node);
     return 0;
 }
