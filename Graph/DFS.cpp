@@ -8,7 +8,7 @@ vector<bool>visited;
 void DFS(ll node){
   visited[node]=true;
   cout<<node<<" ";
-  for(auto x:adj[node]){
+  for(auto x:adj[node]){                 // Recursion
     if(!visited[x]){
       DFS(x);
     }
@@ -21,7 +21,7 @@ void DFS(ll starting_node){
   visited[starting_node]=true;
   while(!st.empty()){
     ll node=st.top();
-    st.pop();
+    st.pop();                              // Iterative approach
     cout<<node<<" ";
     for(auto x:adj[node]){
       if(!visited[x]){
