@@ -43,9 +43,12 @@ int main(){
         adj[v].push_back(u);
     }
     cin>>starting_node;
-    for(ll i=1;i<n;i++){
-        BFS(i);
-    }
     BFS(starting_node);
+    for(ll i=1;i<=n;i++){
+        if(!visited[i]){                      // In case of the graph is disconnected
+           BFS(i);
+        }
+    }
+   
     return 0;
 }
